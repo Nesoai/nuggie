@@ -1010,7 +1010,9 @@ function bizInvite() {
     sec.append(h("p", { class: "eyebrow" }, "For momtrepreneurs and business-owner parents"),
       h("h2", {}, "Run a business, or dreaming of starting one?"),
       h("p", {}, "The Adventures of Nuggie & Wormy is family-made. It was designed by Mallory, a momtrepreneur, to help her and her husband teach their kids as the family traveled across the states."),
-      h("p", {}, "Now they want to work and partner with other parents who run a business, or who are getting ready to start one. Mallory's company, NESO HQ, helps business owners with grants, public bids, websites and research, and Delta Circle brings main street business owners together."));
+      h("p", {}, "Now they want to work and partner with other parents who run a business, or who are getting ready to start one. Mallory's company, ",
+        h("a", { href: "https://nesohq.com", target: "_blank", rel: "noopener", style: "color:var(--know);font-weight:700" }, "NESO HQ"),
+        ", helps business owners with grants, public bids, websites and research, and Delta Circle brings main street business owners together."));
     if (gateOpen) {
       sec.append(h("div", { class: "biz" },
         h("a", { class: "bizcard biz-neso", href: "https://nesohq.com", target: "_blank", rel: "noopener" },
