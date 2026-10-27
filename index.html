@@ -1009,7 +1009,8 @@ function bizInvite() {
     sec.innerHTML = "";
     sec.append(h("p", { class: "eyebrow" }, "For momtrepreneurs and business-owner parents"),
       h("h2", {}, "Run a business, or dreaming of starting one?"),
-      h("p", {}, "The Adventures of Nuggie & Wormy is made by NESO HQ, the company behind Map Hop Studios. While your explorer plays, take a look at what we build for business owners."));
+      h("p", {}, "The Adventures of Nuggie & Wormy is family-made. It was designed by Mallory, a momtrepreneur, to help her and her husband teach their kids as the family traveled across the states."),
+      h("p", {}, "Now they want to work and partner with other parents who run a business, or who are getting ready to start one. Mallory's company, NESO HQ, helps business owners with grants, public bids, websites and research, and Delta Circle brings main street business owners together."));
     if (gateOpen) {
       sec.append(h("div", { class: "biz" },
         h("a", { class: "bizcard biz-neso", href: "https://nesohq.com", target: "_blank", rel: "noopener" },
@@ -1019,7 +1020,8 @@ function bizInvite() {
         h("a", { class: "bizcard biz-dc", href: "https://deltacircle.nesohq.com", target: "_blank", rel: "noopener" },
           h("small", {}, "deltacircle.nesohq.com"), h("b", {}, "Delta Circle"),
           h("p", {}, "Local commerce, global community. A membership circle for main street business owners and the people getting ready to become one. Delta Circle is by NESO."),
-          h("span", { class: "go" }, "Visit Delta Circle"))));
+          h("span", { class: "go" }, "Visit Delta Circle"))),
+        h("p", { style: "font-weight:600" }, "Want to partner with us? Email ", h("b", { style: "user-select:all" }, "hello@nesohq.com"), " and tell us about your business."));
     } else {
       sec.append(h("p", { class: "muted", style: "font-size:15px;font-weight:600" }, "These links leave the club, so they sit behind a quick grown-up check."), grownGate(paint));
     }
