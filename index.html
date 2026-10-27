@@ -119,16 +119,15 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:4px solid var(-
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 
 /* ---------- floating tab bar ---------- */
-.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));pointer-events:none}
-.tabs .wrap{pointer-events:auto}
-.tabbar{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;background:var(--card);border:3px solid var(--edge);border-radius:26px;box-shadow:0 5px 0 var(--edge);padding:6px}
+.tabs{position:fixed;left:0;right:0;bottom:0;z-index:20;background:var(--card);border-top:3px solid var(--edge);padding-bottom:env(safe-area-inset-bottom,0px);box-shadow:0 -4px 0 rgba(21,34,58,.08)}
+.tabbar{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:2px;padding-block:6px}
 .tab{background:none;border:0;display:flex;flex-direction:column;align-items:center;gap:1px;padding:6px 0 5px;border-radius:18px;font-size:11.5px;min-width:0;font-weight:700;color:var(--muted);transition:transform .15s}
 .tab .ico{width:26px;height:26px;color:var(--zc)}
 .tab:active{transform:scale(.9)}
 .tab[aria-current="page"]{color:#fff;background:var(--zc)}
 .tab[aria-current="page"] .ico{color:#fff}
 
-main{padding-block:10px 130px;display:flex;flex-direction:column;gap:20px}
+main{padding-block:10px 110px;display:flex;flex-direction:column;gap:20px}
 main[hidden]{display:none!important}
 
 /* ---------- shared pieces ---------- */
